@@ -1,0 +1,15 @@
+schema: https://hirendra-rathor.github.io/continuous-assurance/schema/model-source
+repository:
+- id: repo:flask
+  name: flask
+  title: Flask
+  url: https://github.com/hirendra-rathor/flask
+binding:
+  repository: repo:flask
+  scope: .
+  construction_source:
+    kind: git
+    branch: null
+    commit: d086db856be187255b8ec61ef409357393020f32
+    dirty: false
+  target_commit: d086db856be187255b8ec61ef409357393020f32

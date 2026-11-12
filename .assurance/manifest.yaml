@@ -1,0 +1,45 @@
+format: defenseloop.ai/assurance-corpus/branch
+version: 1
+branch:
+  name: main
+  ref: refs/heads/main
+analysis:
+  status: candidate
+  analyzed_commit: d086db856be187255b8ec61ef409357393020f32
+  analyzed_tree: b7c01f0b37b4ebe6c21d107b5f02632211f1c18b
+  engine_commit: null
+  contract_version: 0.7.0
+  analyzed_at: '2026-11-10T21:48:46Z'
+  provenance_tracking:
+    status: manually-recorded
+    note: Replaced the previous Flask publication with the completed whole-repository model constructed
+      and reconciled using Continuous Assurance 0.9.0 and Compact revision 11, Corpus Layout 0.7.0. All
+      192 payload files are imported byte-for-byte from the clean detached Flask checkout at the analyzed
+      commit, preserving identities, source binding, evidence, source inventory, four construction handoffs,
+      reconciliation assessment, completion receipts, validation and the initial maintenance baseline.
+      The candidate contains 181 Facets, 186 Aspects and 1112 relationships across six Perspectives, including
+      388 targets-for-testing claims from 45 Verification Facets (4 unit, 19 component and 22 integration
+      families). All four construction receipts and whole-scope reconciliation are complete with author
+      self-review pass. Final source, model and record checks passed with complete deterministic coverage,
+      no skipped checks and zero diagnostics. All deferred correspondence obligations are resolved. Reconciliation
+      required no candidate-model repair; one source locator in its assessment was corrected before successful
+      completion. The analyzed time is the logged reconciliation worker completion time. The original
+      modeling engine commit was not recorded. Independent review and Human acceptance remain pending.
+      Verification describes intended targets; tests were not executed and assertions or adequacy were
+      not assessed. This import preserves recorded outcomes and establishes no new modeling, review or
+      acceptance result. The main storage branch identifies the publication destination, rather than a
+      claim that the model describes its current tip.
+      Explorer compatibility metadata updated on 2026-11-11 for Continuous Assurance 0.10.0 and
+      Compact revision 13. The context pin and current reconciliation, attempt, validation, and
+      baseline bindings were updated after full deterministic validation passed with complete
+      coverage and zero diagnostics. Model claims, source binding, construction receipts,
+      semantic decisions, original software release, and source observations are preserved. This
+      metadata repair does not repeat semantic review, advance the analyzed source commit, or
+      qualify the current source checkout.
+      Explorer metadata rebound to the hirendra-rathor/flask fork on 2026-11-12. Only the
+      repository URL, dependent current candidate and validation digests, and compatibility
+      annotations were updated. Continuous Assurance 0.10.0 deterministic model validation
+      passed across all six Perspectives with complete coverage and zero diagnostics. The
+      registered source commit, model claims, semantic records, historical construction receipts,
+      software release, source observations, and decisions are preserved. No additional modeling
+      was performed, and this metadata repair does not qualify the current source checkout.

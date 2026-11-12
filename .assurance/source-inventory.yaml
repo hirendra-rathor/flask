@@ -1,0 +1,88 @@
+schema: https://hirendra-rathor.github.io/continuous-assurance/schema/agent-tools/source-inventory
+file_groups:
+- globs:
+  - '**'
+  kind: regular-file
+  category: other
+  classification_basis: Documentation, assets, manifests, and routine build/development
+    sources outside executable first-party regions.
+  selection: excluded
+  selection_reason: Compact matrix excludes documentation and tooling.
+- globs:
+  - src/flask/**/*.py
+  priority: 10
+  kind: regular-file
+  category: production-source
+  classification_basis: Shipped framework implementation, including public testing
+    support and shipped CLI.
+  selection: included
+  selection_reason: First-party production implementation eligible for all groups.
+- directories:
+  - tests
+  priority: 10
+  kind: regular-file
+  category: test-source
+  classification_basis: Production behavior tests and their application/data fixtures.
+  selection: included
+  selection_reason: Verification evidence under the Compact matrix.
+- globs:
+  - examples/**/*.py
+  - examples/**/*.sql
+  - examples/**/*.html
+  priority: 10
+  kind: regular-file
+  category: production-source
+  classification_basis: Authored example application implementation, including schema
+    and executable template declarations.
+  selection: included
+  selection_reason: Domain example skim only.
+- globs:
+  - examples/**/tests/**
+  priority: 20
+  kind: regular-file
+  category: test-source
+  classification_basis: Tests and fixtures for examples.
+  selection: excluded
+  selection_reason: Example tests excluded by Compact matrix.
+prune:
+- globs:
+  - '**/__pycache__'
+  - '**/node_modules'
+  reason: Generated cache and installed dependency boundaries.
+group_selection:
+- groups:
+  - state-and-subsystem
+  - architecture
+  - domain
+  directories:
+  - tests
+  selection: excluded
+  selection_reason: Production tests reserved for Verification.
+- groups:
+  - state-and-subsystem
+  - architecture
+  - verification
+  directories:
+  - examples
+  selection: excluded
+  selection_reason: Examples reserved for Domain skim.
+enumeration_complete: true
+enumeration_basis:
+  source:
+    repository: repo:flask
+    branch: null
+    commit: d086db856be187255b8ec61ef409357393020f32
+    clean: true
+  policy: 1d329744013a13ef4b62777928824db865bbc98162e8f33c4ea0cb7934daa76c
+  resources: 0c192ea7a35fa24fdea7eb93e4aed1b19370f11c88ebaf0af826548dede22f04
+  tree: 264365c18f94e83ef3f269bb4ffeaa72faf828595a3157573f7d48a56f045be1
+boundaries:
+- path: .assurance
+  disposition: excluded
+  reason: Selected model storage.
+- path: .devcontainer
+  disposition: excluded
+  reason: Hidden directory; excluded from source inventory.
+- path: .github
+  disposition: excluded
+  reason: Hidden directory; excluded from source inventory.

@@ -1,0 +1,737 @@
+# Explorer-only compatibility metadata: Compact 13 and the fork repository URL.
+# Fork URL and dependent receipts refreshed on 2026-11-12 after deterministic model validation.
+# Original corpus metadata: Git commit 1cfb62b075ca975892d1cce6b4d5bdadbc4c1da8.
+# No construction, reconciliation, maintenance, or semantic revalidation performed.
+# Historical method versions, software release, source observations, and decisions are preserved.
+schema: https://hirendra-rathor.github.io/continuous-assurance/schema/model-lifecycle-state
+phases:
+  state-and-subsystem:
+    authors:
+    - codex-state-and-subsystem
+    decision:
+      outcome: complete
+      self_review: pass
+      action: State and Subsystem author-complete; next authorized owner constructs
+        Architecture and resolves retained participant obligations. Do not infer reconciliation,
+        independent review, acceptance or publication.
+      producer:
+        id: codex-state-and-subsystem
+      method:
+        id: compact/state-and-subsystem
+        version: '11'
+    scope: .
+    record: construction/state-and-subsystem/handoff.md
+    groups:
+    - state-and-subsystem
+    receipt:
+      basis:
+        candidate: bc0481fae617b9089b96f5bfcb6de647c8999a6fa5d562ba4c8522ed9ee04078
+        resources:
+          corpus_layout: 0.7.0
+          modeler:
+            id: compact
+            revision: 11
+          areas:
+          - id: area:architecture
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:domain
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:state-management
+            version: 0.6.0
+            layout_version: 0.4.0
+          - id: area:subsystem-design
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:subsystem-interfaces
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:verification
+            version: 0.7.1
+            layout_version: 0.4.0
+        records:
+          paths:
+          - construction/state-and-subsystem/handoff.md
+          - source-inventory.yaml
+          digest: 6ea34c82b0b93c44c131c204e7d11adbfa0d39e447ca3371dce04a40df115afb
+      entry:
+        outcome: pass
+        repository: repo:flask
+        branch: null
+        expected_commit: d086db856be187255b8ec61ef409357393020f32
+        observed_commit: d086db856be187255b8ec61ef409357393020f32
+        clean: true
+        binding_matches: true
+        model_storage:
+          kind: local
+        checkout:
+          kind: git
+          branch: null
+          commit: d086db856be187255b8ec61ef409357393020f32
+          dirty: false
+      checks:
+        source:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+          limits:
+          - The checkout was observed at group entry.
+        model:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+        records:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+      validation_digest: dc8a9ab5a83137ea9f17f818233413a39c85b17371d13b899363400bf384997a
+    applicability: current
+    record_digest: 5669dc1a81b3a8ff108d7be78a7c35ec03f0d094a27c66b086ec0a7360057c06
+  architecture:
+    authors:
+    - codex-architecture
+    decision:
+      outcome: complete
+      self_review: pass
+      action: Architecture author-complete. Next authorized owner constructs Domain,
+        resolving A-D-purpose, A-D-capabilities and A-D-roles alongside prerequisite
+        Domain obligations. Reconciliation and independent review remain separate.
+      producer:
+        id: codex-architecture
+      method:
+        id: compact/architecture
+        version: '11'
+    scope: .
+    record: construction/architecture/handoff.md
+    groups:
+    - architecture
+    receipt:
+      basis:
+        candidate: f6b99bb339784cb51c3d9cda178a038919813733372fb1e715977e31f66b0fd5
+        resources:
+          corpus_layout: 0.7.0
+          modeler:
+            id: compact
+            revision: 11
+          areas:
+          - id: area:architecture
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:domain
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:state-management
+            version: 0.6.0
+            layout_version: 0.4.0
+          - id: area:subsystem-design
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:subsystem-interfaces
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:verification
+            version: 0.7.1
+            layout_version: 0.4.0
+        records:
+          paths:
+          - construction/state-and-subsystem/handoff.md
+          - construction/architecture/handoff.md
+          - source-inventory.yaml
+          digest: b4fe64f6500c346e5c71a274564e601a6386c19cde2ca4ca6ee923419f79c05f
+      entry:
+        outcome: pass
+        repository: repo:flask
+        branch: null
+        expected_commit: d086db856be187255b8ec61ef409357393020f32
+        observed_commit: d086db856be187255b8ec61ef409357393020f32
+        clean: true
+        binding_matches: true
+        model_storage:
+          kind: local
+        checkout:
+          kind: git
+          branch: null
+          commit: d086db856be187255b8ec61ef409357393020f32
+          dirty: false
+      checks:
+        source:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+          limits:
+          - The checkout was observed at group entry.
+        model:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+        records:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+      validation_digest: d0ab618d47ef7ab01636ec82e419f725bc17ad0f71b317bb5786289aec370e26
+    applicability: current
+    record_digest: 448c10dfea7e5deff5ece5e8208ed755b06c422a184c242b5a9fc2ef99d28568
+  domain:
+    authors:
+    - codex-domain
+    decision:
+      outcome: complete
+      self_review: pass
+      action: Domain construction complete. Continue with separately authorized Verification
+        construction; then reconciliation.
+      producer:
+        id: codex-domain
+      method:
+        id: compact/domain
+        version: '11'
+    scope: .
+    record: construction/domain/handoff.md
+    groups:
+    - domain
+    receipt:
+      basis:
+        candidate: add9da4d4385dcdfa759e39415d3859e6d7a05a78492e456d1f7d86807ba580b
+        resources:
+          corpus_layout: 0.7.0
+          modeler:
+            id: compact
+            revision: 11
+          areas:
+          - id: area:architecture
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:domain
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:state-management
+            version: 0.6.0
+            layout_version: 0.4.0
+          - id: area:subsystem-design
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:subsystem-interfaces
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:verification
+            version: 0.7.1
+            layout_version: 0.4.0
+        records:
+          paths:
+          - construction/state-and-subsystem/handoff.md
+          - construction/architecture/handoff.md
+          - construction/domain/handoff.md
+          - source-inventory.yaml
+          digest: f9a3891ba693fd869d8f4960e2b84be6ea4043b32283ca216975edc8a3ea399c
+      entry:
+        outcome: pass
+        repository: repo:flask
+        branch: null
+        expected_commit: d086db856be187255b8ec61ef409357393020f32
+        observed_commit: d086db856be187255b8ec61ef409357393020f32
+        clean: true
+        binding_matches: true
+        model_storage:
+          kind: local
+        checkout:
+          kind: git
+          branch: null
+          commit: d086db856be187255b8ec61ef409357393020f32
+          dirty: false
+      checks:
+        source:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+          limits:
+          - The checkout was observed at group entry.
+        model:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+        records:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+      validation_digest: dbba2834e83d5a76f0dcb48d99d571ee484b280d1eb7219f7dd8355d5f423c14
+    applicability: current
+    record_digest: 37a695736c026ca8ebddff8d901d813490146194bc4fc583e7372c09adc5145b
+  verification:
+    authors:
+    - codex-verification
+    decision:
+      outcome: complete
+      self_review: pass
+      action: 'Verification construction author-complete: 45 test families and 388
+        intended-target claims. Next authorized owner performs whole-scope reconciliation;
+        independent review, Human acceptance and publication remain separate.'
+      producer:
+        id: codex-verification
+      method:
+        id: compact/verification
+        version: '11'
+    scope: .
+    record: construction/verification/handoff.md
+    groups:
+    - verification
+    receipt:
+      basis:
+        candidate: b0bca5ee4a7973e03ae2f81cd0d4277e2a6d492f97442c4a6046e943bb591ec8
+        resources:
+          corpus_layout: 0.7.0
+          modeler:
+            id: compact
+            revision: 11
+          areas:
+          - id: area:architecture
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:domain
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:state-management
+            version: 0.6.0
+            layout_version: 0.4.0
+          - id: area:subsystem-design
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:subsystem-interfaces
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:verification
+            version: 0.7.1
+            layout_version: 0.4.0
+        records:
+          paths:
+          - construction/state-and-subsystem/handoff.md
+          - construction/architecture/handoff.md
+          - construction/domain/handoff.md
+          - construction/verification/handoff.md
+          - source-inventory.yaml
+          digest: bf10bcf7cd47c1d78f52a39ff2e50f379211793b534548a1b19339e33ff20f36
+      entry:
+        outcome: pass
+        repository: repo:flask
+        branch: null
+        expected_commit: d086db856be187255b8ec61ef409357393020f32
+        observed_commit: d086db856be187255b8ec61ef409357393020f32
+        clean: true
+        binding_matches: true
+        model_storage:
+          kind: local
+        checkout:
+          kind: git
+          branch: null
+          commit: d086db856be187255b8ec61ef409357393020f32
+          dirty: false
+      checks:
+        source:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+          limits:
+          - The checkout was observed at group entry.
+        model:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+        records:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+      validation_digest: ad9a5e5aee9388e604d178ef8c18e1516c541f9bfd032826174bed72ab16900d
+    applicability: current
+    record_digest: a933073fa31bac701a881aa6d0c8bdb8bc036fe3f2ee15220033e71b37b83857
+  reconciliation:
+    authors:
+    - codex-reconciliation
+    decision:
+      outcome: complete
+      self_review: pass
+      action: Whole-scope reconciliation author-complete; corrected one assessment
+        source locator and made no model corrections. Operator arranges separate independent
+        review of all six Perspectives and preserved construction evidence; Human
+        acceptance and publication remain separate.
+      producer:
+        id: codex-reconciliation
+      method:
+        id: compact/reconciliation
+        version: '11'
+    scope: .
+    record: reconciliation.md
+    groups:
+    - state-and-subsystem
+    - architecture
+    - domain
+    - verification
+    receipt:
+      basis:
+        candidate: a72a7b58d71c566711b8f30a5a36f7495bf1a9fd7437e9776765e9664fdc00b3
+        resources:
+          corpus_layout: 0.7.0
+          modeler:
+            id: compact
+            revision: 13
+          areas:
+          - id: area:architecture
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:domain
+            version: 0.8.0
+            layout_version: 0.4.0
+          - id: area:state-management
+            version: 0.6.0
+            layout_version: 0.4.0
+          - id: area:subsystem-design
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:subsystem-interfaces
+            version: 0.7.0
+            layout_version: 0.4.0
+          - id: area:verification
+            version: 0.7.1
+            layout_version: 0.4.0
+        records:
+          paths:
+          - construction/state-and-subsystem/handoff.md
+          - construction/architecture/handoff.md
+          - construction/domain/handoff.md
+          - construction/verification/handoff.md
+          - reconciliation.md
+          - source-inventory.yaml
+          digest: 250ed01678d54823d67a8f7d9d654d8602c8114d20def0af29140d712b3722cc
+      entry:
+        outcome: pass
+        repository: repo:flask
+        branch: null
+        expected_commit: d086db856be187255b8ec61ef409357393020f32
+        observed_commit: d086db856be187255b8ec61ef409357393020f32
+        clean: true
+        binding_matches: true
+        model_storage:
+          kind: local
+        checkout:
+          kind: git
+          branch: null
+          commit: d086db856be187255b8ec61ef409357393020f32
+          dirty: false
+      completion:
+        outcome: pass
+        repository: repo:flask
+        branch: null
+        expected_commit: d086db856be187255b8ec61ef409357393020f32
+        observed_commit: d086db856be187255b8ec61ef409357393020f32
+        clean: true
+        binding_matches: true
+        model_storage:
+          kind: local
+        checkout:
+          kind: git
+          branch: null
+          commit: d086db856be187255b8ec61ef409357393020f32
+          dirty: false
+      checks:
+        source:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+        model:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+        records:
+          outcome: pass
+          coverage: complete
+          skipped: []
+          diagnostics: []
+      validation_digest: fa4159b6a2372da0f09c4d7e2e98ef0d7f1cbbf740d3134f895f01ac887faf27
+    applicability: current
+    record_digest: 132be005ae240323b5cad627ef288b001cc2542d92f50092eeeaf9a22eee032d
+last_invocation:
+  operation: reconciliation
+  outcome: complete
+  diagnostics: []
+attempt:
+  id: 4d9d85acc66f4793add1d65221ae6185
+  operation: reconciliation
+  scope: .
+  record: reconciliation.md
+  outcome: complete
+  entry:
+    outcome: pass
+    repository: repo:flask
+    branch: null
+    expected_commit: d086db856be187255b8ec61ef409357393020f32
+    observed_commit: d086db856be187255b8ec61ef409357393020f32
+    clean: true
+    binding_matches: true
+    model_storage:
+      kind: local
+    checkout:
+      kind: git
+      branch: null
+      commit: d086db856be187255b8ec61ef409357393020f32
+      dirty: false
+  checkpoint:
+    candidate: a72a7b58d71c566711b8f30a5a36f7495bf1a9fd7437e9776765e9664fdc00b3
+    resources:
+      corpus_layout: 0.7.0
+      modeler:
+        id: compact
+        revision: 13
+      areas:
+      - id: area:architecture
+        version: 0.8.0
+        layout_version: 0.4.0
+      - id: area:domain
+        version: 0.8.0
+        layout_version: 0.4.0
+      - id: area:state-management
+        version: 0.6.0
+        layout_version: 0.4.0
+      - id: area:subsystem-design
+        version: 0.7.0
+        layout_version: 0.4.0
+      - id: area:subsystem-interfaces
+        version: 0.7.0
+        layout_version: 0.4.0
+      - id: area:verification
+        version: 0.7.1
+        layout_version: 0.4.0
+    records:
+      paths:
+      - construction/state-and-subsystem/handoff.md
+      - construction/architecture/handoff.md
+      - construction/domain/handoff.md
+      - construction/verification/handoff.md
+      - reconciliation.md
+      - source-inventory.yaml
+      digest: 250ed01678d54823d67a8f7d9d654d8602c8114d20def0af29140d712b3722cc
+  action: Whole-scope reconciliation author-complete; corrected one assessment source
+    locator and made no model corrections. Operator arranges separate independent
+    review of all six Perspectives and preserved construction evidence; Human acceptance
+    and publication remain separate.
+  producer:
+    id: codex-reconciliation
+  method:
+    id: compact/reconciliation
+    version: '11'
+  groups:
+  - state-and-subsystem
+  - architecture
+  - domain
+  - verification
+  authors:
+  - codex-reconciliation
+  target_commit: d086db856be187255b8ec61ef409357393020f32
+  completion:
+    basis:
+      candidate: a72a7b58d71c566711b8f30a5a36f7495bf1a9fd7437e9776765e9664fdc00b3
+      resources:
+        corpus_layout: 0.7.0
+        modeler:
+          id: compact
+          revision: 13
+        areas:
+        - id: area:architecture
+          version: 0.8.0
+          layout_version: 0.4.0
+        - id: area:domain
+          version: 0.8.0
+          layout_version: 0.4.0
+        - id: area:state-management
+          version: 0.6.0
+          layout_version: 0.4.0
+        - id: area:subsystem-design
+          version: 0.7.0
+          layout_version: 0.4.0
+        - id: area:subsystem-interfaces
+          version: 0.7.0
+          layout_version: 0.4.0
+        - id: area:verification
+          version: 0.7.1
+          layout_version: 0.4.0
+      records:
+        paths:
+        - construction/state-and-subsystem/handoff.md
+        - construction/architecture/handoff.md
+        - construction/domain/handoff.md
+        - construction/verification/handoff.md
+        - reconciliation.md
+        - source-inventory.yaml
+        digest: 250ed01678d54823d67a8f7d9d654d8602c8114d20def0af29140d712b3722cc
+    entry:
+      outcome: pass
+      repository: repo:flask
+      branch: null
+      expected_commit: d086db856be187255b8ec61ef409357393020f32
+      observed_commit: d086db856be187255b8ec61ef409357393020f32
+      clean: true
+      binding_matches: true
+      model_storage:
+        kind: local
+      checkout:
+        kind: git
+        branch: null
+        commit: d086db856be187255b8ec61ef409357393020f32
+        dirty: false
+    completion:
+      outcome: pass
+      repository: repo:flask
+      branch: null
+      expected_commit: d086db856be187255b8ec61ef409357393020f32
+      observed_commit: d086db856be187255b8ec61ef409357393020f32
+      clean: true
+      binding_matches: true
+      model_storage:
+        kind: local
+      checkout:
+        kind: git
+        branch: null
+        commit: d086db856be187255b8ec61ef409357393020f32
+        dirty: false
+    checks:
+      source:
+        outcome: pass
+        coverage: complete
+        skipped: []
+        diagnostics: []
+      model:
+        outcome: pass
+        coverage: complete
+        skipped: []
+        diagnostics: []
+      records:
+        outcome: pass
+        coverage: complete
+        skipped: []
+        diagnostics: []
+    validation_digest: fa4159b6a2372da0f09c4d7e2e98ef0d7f1cbbf740d3134f895f01ac887faf27
+last_success:
+  authors:
+  - codex-architecture
+  - codex-domain
+  - codex-reconciliation
+  - codex-state-and-subsystem
+  - codex-verification
+  source_revision:
+    repository: repo:flask
+    commit: d086db856be187255b8ec61ef409357393020f32
+  branch: null
+  scope: .
+  receipt:
+    basis:
+      candidate: a72a7b58d71c566711b8f30a5a36f7495bf1a9fd7437e9776765e9664fdc00b3
+      resources:
+        corpus_layout: 0.7.0
+        modeler:
+          id: compact
+          revision: 13
+        areas:
+        - id: area:architecture
+          version: 0.8.0
+          layout_version: 0.4.0
+        - id: area:domain
+          version: 0.8.0
+          layout_version: 0.4.0
+        - id: area:state-management
+          version: 0.6.0
+          layout_version: 0.4.0
+        - id: area:subsystem-design
+          version: 0.7.0
+          layout_version: 0.4.0
+        - id: area:subsystem-interfaces
+          version: 0.7.0
+          layout_version: 0.4.0
+        - id: area:verification
+          version: 0.7.1
+          layout_version: 0.4.0
+      records:
+        paths:
+        - construction/state-and-subsystem/handoff.md
+        - construction/architecture/handoff.md
+        - construction/domain/handoff.md
+        - construction/verification/handoff.md
+        - reconciliation.md
+        - source-inventory.yaml
+        digest: 250ed01678d54823d67a8f7d9d654d8602c8114d20def0af29140d712b3722cc
+    entry:
+      outcome: pass
+      repository: repo:flask
+      branch: null
+      expected_commit: d086db856be187255b8ec61ef409357393020f32
+      observed_commit: d086db856be187255b8ec61ef409357393020f32
+      clean: true
+      binding_matches: true
+      model_storage:
+        kind: local
+      checkout:
+        kind: git
+        branch: null
+        commit: d086db856be187255b8ec61ef409357393020f32
+        dirty: false
+    completion:
+      outcome: pass
+      repository: repo:flask
+      branch: null
+      expected_commit: d086db856be187255b8ec61ef409357393020f32
+      observed_commit: d086db856be187255b8ec61ef409357393020f32
+      clean: true
+      binding_matches: true
+      model_storage:
+        kind: local
+      checkout:
+        kind: git
+        branch: null
+        commit: d086db856be187255b8ec61ef409357393020f32
+        dirty: false
+    checks:
+      source:
+        outcome: pass
+        coverage: complete
+        skipped: []
+        diagnostics: []
+      model:
+        outcome: pass
+        coverage: complete
+        skipped: []
+        diagnostics: []
+      records:
+        outcome: pass
+        coverage: complete
+        skipped: []
+        diagnostics: []
+    validation_digest: fa4159b6a2372da0f09c4d7e2e98ef0d7f1cbbf740d3134f895f01ac887faf27
+  decision:
+    outcome: complete
+    self_review: pass
+    action: Whole-scope reconciliation author-complete; corrected one assessment source
+      locator and made no model corrections. Operator arranges separate independent
+      review of all six Perspectives and preserved construction evidence; Human acceptance
+      and publication remain separate.
+    producer:
+      id: codex-reconciliation
+    method:
+      id: compact/reconciliation
+      version: '11'
+  coverage:
+  - construction/state-and-subsystem/handoff.md
+  - construction/architecture/handoff.md
+  - construction/domain/handoff.md
+  - construction/verification/handoff.md
+  - reconciliation.md
+  software_release: 0.9.0

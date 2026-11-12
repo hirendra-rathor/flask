@@ -1,0 +1,65 @@
+schema: https://hirendra-rathor.github.io/continuous-assurance/schema/corpus-context
+layout_version: 0.7.0
+corpus: corpus:flask
+namespace: flask
+system: flask:system
+modeler:
+  id: compact
+  # Explorer compatibility pin; constructed with Compact revision 11.
+  revision: 13
+modeled_system:
+- id: flask:system
+  title: Flask
+  repositories:
+  - repo:flask
+perspective:
+- id: flask:state-management
+  title: State Management
+  system: flask:system
+  semantic_area: area:state-management
+  version: 0.6.0
+  depends_on:
+  - target: flask:architecture
+  - target: flask:domain
+- id: flask:subsystem-design
+  title: Subsystem Design
+  system: flask:system
+  semantic_area: area:subsystem-design
+  version: 0.7.0
+  depends_on:
+  - target: flask:state-management
+  - target: flask:subsystem-interfaces
+  - target: flask:architecture
+  - target: flask:domain
+- id: flask:subsystem-interfaces
+  title: Subsystem Interfaces
+  system: flask:system
+  semantic_area: area:subsystem-interfaces
+  version: 0.7.0
+  depends_on:
+  - target: flask:state-management
+  - target: flask:architecture
+  - target: flask:domain
+- id: flask:architecture
+  title: Architecture
+  system: flask:system
+  semantic_area: area:architecture
+  version: 0.8.0
+  depends_on:
+  - target: flask:domain
+- id: flask:domain
+  title: Domain
+  system: flask:system
+  semantic_area: area:domain
+  version: 0.8.0
+  depends_on: []
+- id: flask:verification
+  title: Verification
+  system: flask:system
+  semantic_area: area:verification
+  version: 0.7.1
+  depends_on:
+  - target: flask:domain
+  - target: flask:architecture
+  - target: flask:subsystem-design
+  - target: flask:subsystem-interfaces

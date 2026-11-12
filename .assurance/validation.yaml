@@ -1,0 +1,143 @@
+# Explorer-only compatibility metadata: Compact 13 and the fork repository URL.
+# Fork URL and dependent receipts refreshed on 2026-11-12 after deterministic model validation.
+# Original corpus metadata: Git commit 1cfb62b075ca975892d1cce6b4d5bdadbc4c1da8.
+# No construction, reconciliation, maintenance, or semantic revalidation performed.
+# Historical method versions, software release, source observations, and decisions are preserved.
+schema: https://hirendra-rathor.github.io/continuous-assurance/schema/model-lifecycle-validation
+attempt: 4d9d85acc66f4793add1d65221ae6185
+basis:
+  candidate: a72a7b58d71c566711b8f30a5a36f7495bf1a9fd7437e9776765e9664fdc00b3
+  resources:
+    corpus_layout: 0.7.0
+    modeler:
+      id: compact
+      revision: 13
+    areas:
+    - id: area:architecture
+      version: 0.8.0
+      layout_version: 0.4.0
+    - id: area:domain
+      version: 0.8.0
+      layout_version: 0.4.0
+    - id: area:state-management
+      version: 0.6.0
+      layout_version: 0.4.0
+    - id: area:subsystem-design
+      version: 0.7.0
+      layout_version: 0.4.0
+    - id: area:subsystem-interfaces
+      version: 0.7.0
+      layout_version: 0.4.0
+    - id: area:verification
+      version: 0.7.1
+      layout_version: 0.4.0
+  records:
+    paths:
+    - construction/state-and-subsystem/handoff.md
+    - construction/architecture/handoff.md
+    - construction/domain/handoff.md
+    - construction/verification/handoff.md
+    - reconciliation.md
+    - source-inventory.yaml
+    digest: 250ed01678d54823d67a8f7d9d654d8602c8114d20def0af29140d712b3722cc
+software_release: 0.9.0
+checks:
+  source:
+    outcome: pass
+    coverage: complete
+    skipped: []
+    diagnostics: []
+  model:
+    outcome: pass
+    coverage: complete
+    skipped: []
+    diagnostics: []
+  records:
+    outcome: pass
+    coverage: complete
+    skipped: []
+    diagnostics: []
+current_qualification:
+  corpus: corpus:flask
+  attempt: 4d9d85acc66f4793add1d65221ae6185
+  status: complete
+  outcome: pass
+  coverage: complete
+  source_revision:
+    repository: repo:flask
+    commit: d086db856be187255b8ec61ef409357393020f32
+  model_storage:
+    kind: local
+  software_release: 0.9.0
+  basis:
+    candidate: a72a7b58d71c566711b8f30a5a36f7495bf1a9fd7437e9776765e9664fdc00b3
+    resources:
+      corpus_layout: 0.7.0
+      modeler:
+        id: compact
+        revision: 13
+      areas:
+      - id: area:architecture
+        version: 0.8.0
+        layout_version: 0.4.0
+      - id: area:domain
+        version: 0.8.0
+        layout_version: 0.4.0
+      - id: area:state-management
+        version: 0.6.0
+        layout_version: 0.4.0
+      - id: area:subsystem-design
+        version: 0.7.0
+        layout_version: 0.4.0
+      - id: area:subsystem-interfaces
+        version: 0.7.0
+        layout_version: 0.4.0
+      - id: area:verification
+        version: 0.7.1
+        layout_version: 0.4.0
+    records:
+      paths:
+      - construction/state-and-subsystem/handoff.md
+      - construction/architecture/handoff.md
+      - construction/domain/handoff.md
+      - construction/verification/handoff.md
+      - reconciliation.md
+      - source-inventory.yaml
+      digest: 250ed01678d54823d67a8f7d9d654d8602c8114d20def0af29140d712b3722cc
+  scope:
+  - flask:architecture
+  - flask:domain
+  - flask:state-management
+  - flask:subsystem-design
+  - flask:subsystem-interfaces
+  - flask:verification
+  entry:
+    outcome: pass
+    repository: repo:flask
+    branch: null
+    expected_commit: d086db856be187255b8ec61ef409357393020f32
+    observed_commit: d086db856be187255b8ec61ef409357393020f32
+    clean: true
+    binding_matches: true
+    model_storage:
+      kind: local
+    checkout:
+      kind: git
+      branch: null
+      commit: d086db856be187255b8ec61ef409357393020f32
+      dirty: false
+  completion:
+    outcome: pass
+    repository: repo:flask
+    branch: null
+    expected_commit: d086db856be187255b8ec61ef409357393020f32
+    observed_commit: d086db856be187255b8ec61ef409357393020f32
+    clean: true
+    binding_matches: true
+    model_storage:
+      kind: local
+    checkout:
+      kind: git
+      branch: null
+      commit: d086db856be187255b8ec61ef409357393020f32
+      dirty: false
